@@ -1,7 +1,7 @@
-## Predicting Hazardous NEOs (Nearest Earth Objects)
+# Predicting Hazardous NEOs (Nearest Earth Objects)
 This project leverages NASA's dataset (1910–2024) from Kaggle to predict whether a Near Earth Object (NEO) is hazardous. By following a structured workflow—data import, cleaning, exploratory analysis, preprocessing (including handling class imbalance), and model training— implement two classification models: Logistic Regression and Random Forest Classifier.
 
-## Table of Contents
+# Table of Contents
 •	Project Overview
 
 •	Data
@@ -29,15 +29,15 @@ o	Model Training & Evaluation
 •	Contact
 
 
-## Project Overview
+# Project Overview
 This repository focuses on predicting the hazard potential of NEOs by applying machine learning techniques. The goal is to classify NEOs as either hazardous or non-hazardous based on features such as absolute magnitude, estimated diameter, and other relevant attributes.
 
-## Data
+# Data
 The dataset used in this project is sourced from **Kaggle** and covers the period from 1910 to 2024. It includes detailed information about each NEO, with the target variable being is_hazardous, which indicates if a NEO is potentially dangerous.
 **Dataset Link:** https://www.kaggle.com/datasets/ivansher/nasa-nearest-earth-objects-1910-2024/data
 
-## Approach
-# Data Import & Cleaning
+# Approach
+## Data Import & Cleaning
 •	Loading the Data:
 The dataset is loaded using pandas.read_csv.
 •	Initial Exploration:
@@ -47,7 +47,7 @@ Missing numerical values in absolute_magnitude, estimated_diameter_min, and esti
 •	Duplicate Check:
 The code verifies and handles duplicate records if present.
 
-# Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 •	Distribution Analysis:
 A count plot visualizes the distribution of hazardous vs. non-hazardous NEOs.
 •	Pairplot:
@@ -59,7 +59,7 @@ A boxplot compares the absolute magnitude distribution between hazardous and non
 •	Categorical Encoding:
 Any categorical features are encoded using LabelEncoder.
 
-# Preprocessing & Handling Imbalance
+## Preprocessing & Handling Imbalance
 •	Feature Selection:
 The target variable is_hazardous is separated from the feature set.
 •	Handling Class Imbalance:
@@ -69,7 +69,7 @@ The balanced dataset is split into training and testing sets (80/20 split).
 •	Normalization:
 Numerical features are normalized using StandardScaler to ensure optimal model performance.
 
-# Model Training & Evaluation
+## Model Training & Evaluation
 Logistic Regression
 •	Training:
 A Logistic Regression model (with a maximum of 1000 iterations) is trained on the scaled training data.
@@ -130,7 +130,7 @@ Confusion Matrix:
 **ROC AUC Score: 0.9992**
 **Accuracy: 98.90%**
 
-## Key Findings & Insights
+# Key Findings & Insights
 •	Data Quality:
 Initial data cleaning, including handling missing values and duplicates, was critical for ensuring reliable results.
 •	Class Imbalance:
@@ -142,7 +142,7 @@ o	Random Forest Classifier: Superior performance with an accuracy of **~98.90%**
 The Random Forest model's feature importance analysis provides valuable insights into which variables most influence the prediction of hazardous NEOs.
 These results highlight the effectiveness of ensemble methods like Random Forest in capturing complex relationships within the data, making it a preferred choice for this classification task.
 
-## Dependencies
+# Dependencies
 •	Python 3.x
 •	pandas
 •	numpy
@@ -152,10 +152,10 @@ These results highlight the effectiveness of ensemble methods like Random Forest
 •	imbalanced-learn
 •	warnings (built-in)
 
-## Contributing
+# Contributing
 Contributions are welcome! Fork the repository, create a branch for your feature or bug fix, and submit a pull request.
 
-## Contact
+# Contact
 For inquiries or collaboration opportunities, please reach out to me:
 
 **Name**: Malak Ismail  
