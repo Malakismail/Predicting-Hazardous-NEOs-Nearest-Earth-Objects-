@@ -95,23 +95,7 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   Logistic Regression Results:
 
   ![Image](https://github.com/user-attachments/assets/4382c549-7e7c-41c2-94e8-8145761fc2e9)
-  
-  Classification Report:
-                 precision    recall  f1-score   support
-  
-         False       0.87      0.72      0.79     59182
-          True       0.76      0.89      0.82     58833
-  
-      accuracy                           0.81    118015
-     macro avg       0.82      0.81      0.81    118015
-  weighted avg       0.82      0.81      0.81    118015
-  
-  Confusion Matrix:
-  [[42535 16647]
-   [ 6180 52653]]
-  
-  **ROC AUC Score: 0.8395**
-  **Accuracy: 80.66%**
+
   
   **Random Forest Classifier**
   •	Training:
@@ -129,24 +113,9 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   •	Feature Importance:
   A bar chart is generated to display the top 10 features contributing to the model’s predictions.
   Random Forest Results:
-  
-  Classification Report:
-                 precision    recall  f1-score   support
-  
-         False       0.99      0.98      0.99     59182
-          True       0.98      0.99      0.99     58833
-  
-      accuracy                           0.99    118015
-     macro avg       0.99      0.99      0.99    118015
-  weighted avg       0.99      0.99      0.99    118015
-  
-  Confusion Matrix:
-  [[58272   910]
-   [  386 58447]]
-  
-  **ROC AUC Score: 0.9992**
-  **Accuracy: 98.90%**
 
+  ![Image](https://github.com/user-attachments/assets/3b1dea4e-e98c-46fd-aad9-4eaf5f40de0c)
+  
 # Key Findings & Insights
 •	**Data Quality:**
 Initial data cleaning, including handling missing values and duplicates, was critical for ensuring reliable results.
