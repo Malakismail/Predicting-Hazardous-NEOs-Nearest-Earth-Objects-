@@ -87,8 +87,8 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   •	Evaluation Metrics:
   o	Classification Report: Provides precision, recall, and F1-score for both classes.
   o	Confusion Matrix: Displays true vs. false classifications.
-  o	ROC AUC Score: Achieved a score of 0.8395.
-  o	Accuracy: Approximately 80.66%.
+  o	ROC AUC Score: Achieved a score of **0.8395**.
+  o	Accuracy: Approximately **80.66%**.
   
   •	ROC Curve:
   The ROC curve is plotted to visualize the trade-off between the true positive rate and false positive rate.
@@ -104,8 +104,8 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   •	Evaluation Metrics:
   o	Classification Report: Near-perfect performance (precision, recall, and F1-score nearly 0.99).
   o	Confusion Matrix: Significantly fewer misclassifications.
-  o	ROC AUC Score: Achieved an outstanding score of 0.9992.
-  o	Accuracy: Approximately 98.90%.
+  o	ROC AUC Score: Achieved an outstanding score of **0.9992**.
+  o	Accuracy: Approximately **98.90%**.
   
   •	ROC Curve:
   The ROC curve is plotted, highlighting the model's exceptional discrimination power.
