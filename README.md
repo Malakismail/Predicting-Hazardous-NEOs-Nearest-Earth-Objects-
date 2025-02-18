@@ -1,7 +1,7 @@
 ## Predicting Hazardous NEOs (Nearest Earth Objects)
-This project leverages NASA's dataset (1910–2024) from Kaggle to predict whether a Near Earth Object (NEO) is hazardous. By following a structured workflow—data import, cleaning, exploratory analysis, preprocessing (including handling class imbalance), and model training—we implement two classification models: Logistic Regression and Random Forest Classifier.
+This project leverages NASA's dataset (1910–2024) from Kaggle to predict whether a Near Earth Object (NEO) is hazardous. By following a structured workflow—data import, cleaning, exploratory analysis, preprocessing (including handling class imbalance), and model training— implement two classification models: Logistic Regression and Random Forest Classifier.
 
-Table of Contents
+## Table of Contents
 •	Project Overview
 •	Data
 •	Approach
@@ -12,19 +12,20 @@ o	Model Training & Evaluation
 	Logistic Regression
 	Random Forest Classifier
 •	Key Findings & Insights
-•	How to Run
 •	Dependencies
-•	License
-________________________________________
-Project Overview
+•	Contributing
+•	Contact
+
+
+## Project Overview
 This repository focuses on predicting the hazard potential of NEOs by applying machine learning techniques. The goal is to classify NEOs as either hazardous or non-hazardous based on features such as absolute magnitude, estimated diameter, and other relevant attributes.
-________________________________________
-Data
-The dataset used in this project is sourced from Kaggle and covers the period from 1910 to 2024. It includes detailed information about each NEO, with the target variable being is_hazardous, which indicates if a NEO is potentially dangerous.
-Dataset Link: NASA Nearest Earth Objects Dataset
-________________________________________
-Approach
-Data Import & Cleaning
+
+## Data
+The dataset used in this project is sourced from **Kaggle** and covers the period from 1910 to 2024. It includes detailed information about each NEO, with the target variable being is_hazardous, which indicates if a NEO is potentially dangerous.
+**Dataset Link:** https://www.kaggle.com/datasets/ivansher/nasa-nearest-earth-objects-1910-2024/data
+
+## Approach
+# Data Import & Cleaning
 •	Loading the Data:
 The dataset is loaded using pandas.read_csv.
 •	Initial Exploration:
@@ -33,8 +34,8 @@ We inspect the dataset’s shape, preview the first few rows, and obtain basic i
 Missing numerical values in absolute_magnitude, estimated_diameter_min, and estimated_diameter_max are filled using the column mean.
 •	Duplicate Check:
 The code verifies and handles duplicate records if present.
-________________________________________
-Exploratory Data Analysis (EDA)
+
+# Exploratory Data Analysis (EDA)
 •	Distribution Analysis:
 A count plot visualizes the distribution of hazardous vs. non-hazardous NEOs.
 •	Pairplot:
@@ -45,8 +46,8 @@ A heatmap of numerical features is generated to observe the correlations, aiding
 A boxplot compares the absolute magnitude distribution between hazardous and non-hazardous NEOs.
 •	Categorical Encoding:
 Any categorical features are encoded using LabelEncoder.
-________________________________________
-Preprocessing & Handling Imbalance
+
+# Preprocessing & Handling Imbalance
 •	Feature Selection:
 The target variable is_hazardous is separated from the feature set.
 •	Handling Class Imbalance:
@@ -55,8 +56,8 @@ SMOTE (Synthetic Minority Oversampling Technique) is applied to balance the clas
 The balanced dataset is split into training and testing sets (80/20 split).
 •	Normalization:
 Numerical features are normalized using StandardScaler to ensure optimal model performance.
-________________________________________
-Model Training & Evaluation
+
+# Model Training & Evaluation
 Logistic Regression
 •	Training:
 A Logistic Regression model (with a maximum of 1000 iterations) is trained on the scaled training data.
@@ -68,8 +69,7 @@ o	Accuracy: Approximately 80.66%.
 •	ROC Curve:
 The ROC curve is plotted to visualize the trade-off between the true positive rate and false positive rate.
 Logistic Regression Results:
-yaml
-CopyEdit
+
 Classification Report:
                precision    recall  f1-score   support
 
@@ -84,9 +84,9 @@ Confusion Matrix:
 [[42535 16647]
  [ 6180 52653]]
 
-ROC AUC Score: 0.8395
-Accuracy: 80.66%
-________________________________________
+**ROC AUC Score: 0.8395**
+**Accuracy: 80.66%**
+
 Random Forest Classifier
 •	Training:
 A Random Forest model with 100 estimators is trained on the same training set.
@@ -100,8 +100,7 @@ The ROC curve is plotted, highlighting the model's exceptional discrimination po
 •	Feature Importance:
 A bar chart is generated to display the top 10 features contributing to the model’s predictions.
 Random Forest Results:
-yaml
-CopyEdit
+
 Classification Report:
                precision    recall  f1-score   support
 
@@ -116,42 +115,22 @@ Confusion Matrix:
 [[58272   910]
  [  386 58447]]
 
-ROC AUC Score: 0.9992
-Accuracy: 98.90%
-________________________________________
-Key Findings & Insights
+**ROC AUC Score: 0.9992**
+**Accuracy: 98.90%**
+
+## Key Findings & Insights
 •	Data Quality:
 Initial data cleaning, including handling missing values and duplicates, was critical for ensuring reliable results.
 •	Class Imbalance:
 Addressing the imbalanced dataset using SMOTE improved the model’s ability to generalize across both classes.
 •	Model Performance:
-o	Logistic Regression: Moderate performance with an accuracy of ~80.66% and ROC AUC of 0.8395.
-o	Random Forest Classifier: Superior performance with an accuracy of ~98.90% and ROC AUC nearing 1.0.
+o	Logistic Regression: Moderate performance with an **accuracy of ~80.66%** and **ROC AUC of 0.8395**.
+o	Random Forest Classifier: Superior performance with an accuracy of **~98.90%** and **ROC AUC nearing 1.0**.
 •	Feature Importance:
 The Random Forest model's feature importance analysis provides valuable insights into which variables most influence the prediction of hazardous NEOs.
 These results highlight the effectiveness of ensemble methods like Random Forest in capturing complex relationships within the data, making it a preferred choice for this classification task.
-________________________________________
-How to Run
-1.	Clone the Repository:
-bash
-CopyEdit
-git clone https://github.com/yourusername/neo-hazard-prediction.git
-cd neo-hazard-prediction
-2.	Install Dependencies:
-bash
-CopyEdit
-pip install -r requirements.txt
-3.	Run the Code:
-o	Jupyter Notebook:
-bash
-CopyEdit
-jupyter notebook
-o	Or as a Python Script:
-bash
-CopyEdit
-python main.py
-________________________________________
-Dependencies
+
+## Dependencies
 •	Python 3.x
 •	pandas
 •	numpy
@@ -160,3 +139,16 @@ Dependencies
 •	scikit-learn
 •	imbalanced-learn
 •	warnings (built-in)
+
+## Contributing
+Contributions are welcome! Fork the repository, create a branch for your feature or bug fix, and submit a pull request.
+
+## Contact
+For inquiries or collaboration opportunities, please reach out to me:
+
+**Name**: Malak Ismail  
+
+**Email**: malakismail706@gmail.com 
+
+**LinkedIn**: https://www.linkedin.com/in/malakismail0/
+
