@@ -8,17 +8,17 @@ This project leverages NASA's dataset (1910–2024) from Kaggle to predict wheth
 
 •	Approach
 
-    o	Data Import & Cleaning
+o	Data Import & Cleaning
 
-    o	Exploratory Data Analysis (EDA)
+o	Exploratory Data Analysis (EDA)
 
-    o	Preprocessing & Handling Imbalance
+o	Preprocessing & Handling Imbalance
 
-    o	Model Training & Evaluation
+o	Model Training & Evaluation
 
-        	Logistic Regression
+	Logistic Regression
 
-        	Random Forest Classifier
+	Random Forest Classifier
 
 •	Key Findings & Insights
 
