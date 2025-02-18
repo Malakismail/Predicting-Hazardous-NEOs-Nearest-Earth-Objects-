@@ -34,6 +34,7 @@ This repository focuses on predicting the hazard potential of NEOs by applying m
 
 # Data
 The dataset used in this project is sourced from **Kaggle** and covers the period from 1910 to 2024. It includes detailed information about each NEO, with the target variable being is_hazardous, which indicates if a NEO is potentially dangerous.
+
 **Dataset Link:** https://www.kaggle.com/datasets/ivansher/nasa-nearest-earth-objects-1910-2024/data
 
 # Approach
@@ -85,9 +86,13 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   A Logistic Regression model (with a maximum of 1000 iterations) is trained on the scaled training data.
   
   •	Evaluation Metrics:
+  
   o	Classification Report: Provides precision, recall, and F1-score for both classes.
+  
   o	Confusion Matrix: Displays true vs. false classifications.
+  
   o	ROC AUC Score: Achieved a score of **0.8395**.
+  
   o	Accuracy: Approximately **80.66%**.
   
   •	ROC Curve:
@@ -102,9 +107,13 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   A Random Forest model with 100 estimators is trained on the same training set.
   
   •	Evaluation Metrics:
+  
   o	Classification Report: Near-perfect performance (precision, recall, and F1-score nearly 0.99).
+  
   o	Confusion Matrix: Significantly fewer misclassifications.
+  
   o	ROC AUC Score: Achieved an outstanding score of **0.9992**.
+  
   o	Accuracy: Approximately **98.90%**.
   
   •	ROC Curve:
