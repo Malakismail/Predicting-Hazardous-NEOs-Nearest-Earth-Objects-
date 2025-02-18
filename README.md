@@ -93,6 +93,8 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   •	ROC Curve:
   The ROC curve is plotted to visualize the trade-off between the true positive rate and false positive rate.
   Logistic Regression Results:
+
+  ![Image](https://github.com/user-attachments/assets/4382c549-7e7c-41c2-94e8-8145761fc2e9)
   
   Classification Report:
                  precision    recall  f1-score   support
