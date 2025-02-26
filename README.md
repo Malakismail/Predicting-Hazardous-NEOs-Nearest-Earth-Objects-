@@ -91,9 +91,9 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   
   o	Confusion Matrix: Displays true vs. false classifications.
   
-  o	ROC AUC Score: Achieved a score of **0.8395**.
+  o	ROC AUC Score: Achieved a score of **0.8467**.
   
-  o	Accuracy: Approximately **80.66%**.
+  o	Accuracy: Approximately **87.12%**.
   
   •	ROC Curve:
   The ROC curve is plotted to visualize the trade-off between the true positive rate and false positive rate.
@@ -112,9 +112,9 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   
   o	Confusion Matrix: Significantly fewer misclassifications.
   
-  o	ROC AUC Score: Achieved an outstanding score of **0.9992**.
+  o	ROC AUC Score: Achieved an outstanding score of **0.9985**.
   
-  o	Accuracy: Approximately **98.90%**.
+  o	Accuracy: Approximately **98.77%**.
   
   •	ROC Curve:
   The ROC curve is plotted, highlighting the model's exceptional discrimination power.
@@ -134,9 +134,9 @@ Addressing the imbalanced dataset using SMOTE improved the model’s ability to 
 
 •	**Model Performance:**
 
-o	**Logistic Regression:** Moderate performance with an **accuracy of ~80.66%** and **ROC AUC of 0.8395**.
+o	**Logistic Regression:** Moderate performance with an **accuracy of ~87.12%** and **ROC AUC of 0.8467**.
 
-o	**Random Forest Classifier:** Superior performance with an accuracy of **~98.90%** and **ROC AUC nearing 1.0**.
+o	**Random Forest Classifier:** Superior performance with an accuracy of **~98.77%** and **ROC AUC nearing 1.0**.
 
 •	**Feature Importance:**
 The Random Forest model's feature importance analysis provides valuable insights into which variables most influence the prediction of hazardous NEOs.
