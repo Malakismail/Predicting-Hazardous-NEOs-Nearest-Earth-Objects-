@@ -99,7 +99,7 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   The ROC curve is plotted to visualize the trade-off between the true positive rate and false positive rate.
   Logistic Regression Results:
 
-  ![Image](https://github.com/user-attachments/assets/4382c549-7e7c-41c2-94e8-8145761fc2e9)
+  ![Image](https://github.com/user-attachments/assets/b2cc6425-f005-47ea-9319-353792c3f894)
 
   
   **Random Forest Classifier**
@@ -123,7 +123,7 @@ The dataset used in this project is sourced from **Kaggle** and covers the perio
   A bar chart is generated to display the top 10 features contributing to the model’s predictions.
   Random Forest Results:
 
-  ![Image](https://github.com/user-attachments/assets/3b1dea4e-e98c-46fd-aad9-4eaf5f40de0c)
+  ![Image](https://github.com/user-attachments/assets/d563ffb4-04d0-49c2-9ee8-96721e738490)
   
 # Key Findings & Insights
 •	**Data Quality:**
